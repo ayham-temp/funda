@@ -8,5 +8,5 @@ part 'network_failure.freezed.dart';
 class NetworkFailure with _$NetworkFailure implements BaseFailure {
   const NetworkFailure._();
   const factory NetworkFailure.noConnection({String? message}) = NoConnection;
-  const factory NetworkFailure.serverException({String? message}) = SocketClosed;
+  const factory NetworkFailure.serverException({String? message}) = ServerException;
 }
