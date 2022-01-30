@@ -13,11 +13,11 @@ abstract class PropertyService implements BaseService {
 }
 
 @Injectable(as: PropertyService)
-class StationServiceImpl implements PropertyService {
+class PropertyServiceImpl implements PropertyService {
   final Client client;
   static const String _propertyUrl = apiUrl;
 
-  StationServiceImpl(this.client);
+  PropertyServiceImpl(this.client);
 
   @override
   Future<Property> getPropertyById(String propertyId) async {
