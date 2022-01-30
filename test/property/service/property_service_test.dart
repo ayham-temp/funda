@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:funda_assignment/common/env.dart';
-import 'package:funda_assignment/common/failure/netowrk_failure/network_failure.dart';
 import 'package:funda_assignment/property/model/property.dart';
 import 'package:funda_assignment/property/service/property_service.dart';
 import 'package:http/http.dart';
