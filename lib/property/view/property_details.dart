@@ -60,14 +60,14 @@ class _Body extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 8),
-        ContentPadding(child: _AgentInfo(property: property)),
+        ContentPadding(child: _OwnerInfo(property: property)),
       ],
     );
   }
 }
 
-class _AgentInfo extends StatelessWidget {
-  const _AgentInfo({Key? key, required this.property}) : super(key: key);
+class _OwnerInfo extends StatelessWidget {
+  const _OwnerInfo({Key? key, required this.property}) : super(key: key);
 
   final Property property;
 
@@ -237,9 +237,7 @@ class _MainInfo extends StatelessWidget {
         ),
         const Align(
           alignment: Alignment.topRight,
-          child: Tag(
-            label: Text('OPEN'),
-          ),
+          child: Tag(label: Text('OPEN')),
         ),
       ],
     );
